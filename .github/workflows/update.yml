@@ -24,7 +24,7 @@ jobs:
           # 默认用 Actions 自带的 token；若它查不了 GraphQL，
           # 就在仓库 Settings → Secrets 加一个 GITCAL_TOKEN（无 scope 的 classic PAT 即可）
           GH_TOKEN: ${{ secrets.GITCAL_TOKEN || github.token }}
-          GH_USER: fomalhaut1998
+          GH_USER: chfychin
           OUT: data.json
         run: python3 generate.py
 
